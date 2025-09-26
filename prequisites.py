@@ -1,3 +1,4 @@
+from functools import wraps
 def decorator1(og_func):
     def wrapper():
         return og_func()
