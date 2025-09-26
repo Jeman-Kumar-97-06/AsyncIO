@@ -16,3 +16,8 @@ def f1():
 
 f1()
 print(f1.__name__)
+
+def func1():
+    import time
+    print(time)
+func1()
