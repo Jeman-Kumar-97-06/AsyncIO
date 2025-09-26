@@ -15,3 +15,4 @@ def f1():
     return print('jeman')
 
 f1()
+print(f1.__name__)
