@@ -21,3 +21,18 @@ def func1():
     import time
     print(time)
 func1()
+
+
+def decorator_1(og):
+    def nigga(*args,**kwargs):
+        print("Ran Wrapper")
+        return og(*args,**kwargs)
+    return nigga
+
+@decorator_1
+def f(name,age):
+    print("name",name,'\n',"age",age)
+
+# f = decorator_1(f)
+f('jeman',30)
+print(f.__name__)
