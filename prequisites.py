@@ -25,6 +25,7 @@ func1()
 
 
 def decorator_1(og):
+    @wraps(og)
     def nigga(*args,**kwargs):
         print("Ran Wrapper")
         return og(*args,**kwargs)
