@@ -14,7 +14,7 @@ async def main():
     task2 = asyncio.create_task(asyncio.to_thread(fetch_data,2))
     result1 = await task1
     print('Thread1 fully completed')
-    result2 = await task2
+    result2 = await task2 
     print("Thread2 fully completed")
 
     loop = asyncio.get_running_loop()
