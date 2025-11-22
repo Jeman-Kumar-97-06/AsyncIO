@@ -1,14 +1,15 @@
 import asyncio
 import time
 
+#Normal Function:
 def sync_function(test_param: str) -> str:
-    print("This is a sync function")
-    time.sleep(0.1)
-    return f"Sync Result : {test_param}"
+    print("This is a sync function")     #Prints 'This is a sync function'. It blocks the next line till then.
+    time.sleep(0.1)                      #Function sleeps for 0.1 sec. It blocks the next line till then.
+    return f"Sync Result : {test_param}" #Returns 'Sync Result : {__parameter__}'
 
 #Async Co-Routine Function:
 async def async_function(test_param:str) -> str:
-    print("This is an async co routine function")
+    print("This is an async co routine function") 
     await asyncio.sleep(0.1)
     return f"Async Result : {test_param}"
 
